@@ -4,6 +4,8 @@ int main(void)
 {
   int i = 12345;
   float j = 123.4567;
+  float k = 30.253;
+  float l = 0.0000009979;
 
   printf("   i: %d\n", i);
   printf("   j: %f\n", j);
@@ -17,6 +19,12 @@ int main(void)
   printf(" .3f: %.3f\n", j);
   printf("   g: %g\n", j);
   printf(" .5g: %.3g\n", j);
+
+  printf("    e <- k: %e\n", k);
+  printf("12.5e <- k: %12.5e\n", k);
+
+  printf("    g <- l: %g\n", l);
+  printf("-6.2g <- l: %-6.2g\n", l);
 
   return 0;
 }
